@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ludo King®</title>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <h1>Welcome to Ludo King®</h1>
+  <p>Classic board game for friends and family!</p>
+  <button onclick="alert('Ludo Button Clicked!')">Play Ludo</button>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDlhpoHPffa1pBQ0z8L7eyDTfWdMvtQeKQ",
+      authDomain: "the-winner-a25c3.firebaseapp.com",
+      databaseURL: "https://the-winner-a25c3-default-rtdb.firebaseio.com/",
+      projectId: "the-winner-a25c3",
+      storageBucket: "the-winner-a25c3.appspot.com",
+      messagingSenderId: "365924271664",
+      appId: "1:365924271664:web:b856749b065c427f670ff5"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+  </script>
+</body>
+</html>
